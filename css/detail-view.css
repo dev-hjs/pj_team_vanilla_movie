@@ -171,9 +171,12 @@
   border-top: 5px solid #0e0a20;
 }
 
-.detail .movie-video .video {
+.detail .movie-video .main-video {
   height: auto;
   text-align: center;
+}
+
+.detail .movie-video .rest-video {
 }
 
 .detail .movie-video h4 {
