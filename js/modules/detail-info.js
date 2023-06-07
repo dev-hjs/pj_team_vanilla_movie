@@ -1,10 +1,10 @@
-export const detailInfo = () => {
-  const key = "4e657bab9a1d4d7b73eb2631af49f6da";
-  const movieDetailsElement = document.getElementById("movieDetails");
+export const urlParams = new URLSearchParams(window.location.search);
+export const movieId = urlParams.get("id");
 
-  const urlParams = new URLSearchParams(window.location.search);
-  console.log(window.location.search, urlParams);
-  const movieId = urlParams.get("id");
+const key = "4e657bab9a1d4d7b73eb2631af49f6da";
+const movieDetailsElement = document.getElementById("movieDetails");
+
+export const detailInfo = () => {
   async function fetchMovieDetails(movieId) {
     const url = `https://api.themoviedb.org/3/movie/${movieId}?api_key=${key}&append_to_response=credits`;
     const res = await fetch(url);

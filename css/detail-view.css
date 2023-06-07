@@ -172,6 +172,7 @@
 }
 
 .detail .movie-video .video {
+  height: auto;
   text-align: center;
 }
 
