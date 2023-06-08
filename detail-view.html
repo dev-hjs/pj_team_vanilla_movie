@@ -78,42 +78,13 @@
       </div>
       <!-- 영화 상세 내용 부분 -->
       <div class="detail">
-        <div class="box">
-          <div class="box-img"><img src="testimg.jpg" alt="Image" class="box-size"></div>
-          <div class="box-contents">
-            <div class="title">
-              <strong>The Roundup: No Way Out</strong>
-            </div>
-            <div class="vote-average">
-              <p>Score&nbsp;<span>8.8</span></p>
-            </div>
-            <div class="spec">
-              <p>Director:&nbsp;<span>누구</span></p>
-              <p>Genre:&nbsp;<span>범죄</span></p>
-              <p>Release Date:&nbsp;<span>2023-05-31</span></p>
-            </div>
-            <div class="overview">South Korea's representative crime action series depicting a monster detective
-              "Maseokdo" (Ma Dong-seok), who moved to the metropolitan investigation unit, and a campaign to wipe out
-              the
-              crime of yakuza with a new team.
-              >>>>>>> 33ca88f577b2e98ee8edbcb9640d2486b1393826
-
-              Irreplaceable Monster Detective Masukdo was selected as Gwangsu-daero, Seoul! Seven years after the arrest
-              of the Vietnamese kidnapper and murderer, Maseokdo (Ma Dong-seok) investigates the murder with new team
-              members. During the case investigation, "Maseokdo" learns that a new drug case is involved and expands the
-              investigation. Meanwhile, the scale of the case is growing as "Ju Sung-chul" (Lee Joon-hyuk), who is
-              behind
-              the drug case, continues to grow the plate and even the Japanese organization that distributed drugs and
-              "Riki" (Aoki Munetaka) enter Korea... There's no reason and no limit to catching bad guys. I'm going to
-              wipe
-              out the bigger one!</div>
-          </div>
-        </div>
+        <div id="movieDetails" class="box"></div>
         <div class="movie-video">
+          <!-- 영화 비디오 부분 -->
           <h4>Main trailer</h4>
-          <div class="video">
-            <iframe width="1000" height="580" src="https://www.youtube.com/embed/UTPEPu2Je9g" title="#"
-              frameborder="0"></iframe>
+          <div class="main-video">
+          </div>
+          <div class="rest-video">
           </div>
         </div>
       </div>
@@ -398,9 +369,7 @@
   <script src="js/aos.js"></script>
   <script src="js/custom.js"></script>
   <!-- js: movie -->
-  <script src="js/movies.js"></script><!-- api -->
-  <script src="js/search.js"></script><!-- search -->
-
+  <script type="module" src="js/detail.js"></script>
 </body>
 
 </html>

@@ -14,16 +14,16 @@ export const fetchMovie = (page) => {
       movies.map(function (movie) {
         const div = document.createElement("div");
         div.classList.add("list");
-        const output = `<div class="post-entry-alt" onclick="openView(${
-          movie.id
-        })">
+        const output = `<div class="post-entry-alt">
                                 <div class="items">
                                   <div class="img-link item">
                                     <img src="${
                                       base_url + movie.poster_path
                                     }" class="img-fluid" alt="" style="width:100%">
                                     <div class="caption">
-                                      <a href="detail-view.html">View details</a>
+                                      <a href="./detail-view.html?id=${
+                                        movie.id
+                                      }">View details</a>
                                     </div>
                                   </div>
                                 </div>
@@ -43,8 +43,3 @@ export const fetchMovie = (page) => {
     })
     .catch((err) => console.log(err));
 };
-
-//썸네일 클릭시 실행 될 함수 event로 DOM 정보를 가져와서 필요한 데이터를 빼서 사용
-// function openView(id) {
-//   alert(`영화 ID : ` + id);
-// }
