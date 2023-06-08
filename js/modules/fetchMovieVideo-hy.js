@@ -12,7 +12,7 @@ export const options = {
   headers: {
     accept: "application/json",
     Authorization:
-      "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI2ZDE1MzY1OGE1NTViYTk1ZjI0NjRhNmRiZDFiN2U3ZiIsInN1YiI6IjY0NzU2NTUyOTYzODY0MDBkZTcxN2Y5YSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.I7BGy5Xgx5GCkWw-SPFzO44oDiANX7h7mshYNLZkguI",
+      "",
   },
 };
 
