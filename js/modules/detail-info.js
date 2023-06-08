@@ -1,6 +1,6 @@
 export const detailInfo = () => {
   // api key
-  const key = "4e657bab9a1d4d7b73eb2631af49f6da";
+  const key = config.apikey;
   const movieDetailsElement = document.getElementById("movieDetails");
 
   // url에서 쿼리 id 가져오기 : ?id=영화id
